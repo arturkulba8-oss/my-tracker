@@ -1,6 +1,6 @@
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(130px, 1fr));
   gap: 12px;
   box-sizing: border-box;
   width: 100%;
