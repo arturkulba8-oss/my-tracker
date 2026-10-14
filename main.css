@@ -1,10 +1,4 @@
-:root {
-    --back: rgb(0, 0, 0);
-    --text: rgb(236, 229, 229);
-    /* --border: rgb(10, 11, 14);
-    --white: rgb(0, 0, 0); */
-    
-}
+
 
 .stats-grid {
   display: grid;
@@ -16,8 +10,8 @@
 }
 
 .card {
-  background: var(--back);
-  color: var(--text);
+  background: black;
+  color: whitesmoke;
   border: 1px solid #e0e0e0;
   border-radius: 12px;
   padding: 15px;
