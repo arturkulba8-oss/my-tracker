@@ -3,6 +3,7 @@
 <html>
     <head>
         <title> Мой первый документ </title>
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
         <meta http-equiv="Pragma" content="no-cache">
@@ -10,9 +11,38 @@
         <link rel="stylesheet" href="main.css?v=2">
     </head>
     <body>
-        <div class="stats-grid">
-            <button class="menu-but" onclick="toggleMenu()">☰</button>
+            
+        <div class="stats-grid"> 
+            <button class="menu-but" id="menu-but" style="float: right;">
+                <span class="burger-icon">☰</span>
+                <span class="close-icon">✖</span>
+            </button>
 
+            <div id="sidebar" class="sidebar">
+                <h3>Разделы</h3>
+                    <ul style="row-gap: 5em;">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Статистика</a></li>
+                        <li><a href="#">Категории</a></li>
+                        <li><a href="#">Настройки</a></li>
+                    </ul>
+            </div>
+
+            <script>
+                const menuBut = document.getElementById('menu-but');
+                const sidebarM = document.getElementById('sidebar');
+
+                menuBut.addEventListener('click', () => {
+                // Переключаем класс 'open' (если его нет — добавит, если есть — удалит)
+                menuBut.classList.toggle('open');
+                sidebarM.classList.toggle('open');
+                });
+            </script>
+            
+
+            <div class="header">
+                <img src="./images/logo.png" usemap="#first"  alt="logo" style="float: left; height: 7em; width: 7em;" />
+            </div>
             <div class="card">
                 <h3>Доходы</h3>
                 <p>+ 1500 BYN</p>
