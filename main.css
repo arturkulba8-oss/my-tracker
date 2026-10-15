@@ -4,15 +4,26 @@
   gap: 12px;
   box-sizing: border-box;
   width: 100%;
+  background-color: black;
 }
 
 .card {
   /* Переносим цвет фона и текста прямо в карточку */
-  background: rgb(176, 26, 26);
-  color: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  color: rgb(255, 246, 246);
   
   border: 1px solid #444444; /* Сделаем рамку чуть темнее, чтобы смотрелась гармонично */
   border-radius: 12px;
   padding: 15px;
   text-align: center;
+}
+
+.menu-but{
+    border: none;
+    position: fixed;
+    right: 15px;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    z-index: 100;
 }
