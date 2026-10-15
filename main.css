@@ -57,6 +57,14 @@ body{
   z-index: 90;
 }
 
+li {
+  border: 1px solid #cabcbc;
+  margin: 3em;
+}
+a {
+  color: aliceblue;
+}
+
 .sidebar.open {
   right: 0;
 }
